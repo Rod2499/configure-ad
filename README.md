@@ -84,9 +84,29 @@ Create a new OU named “_CLIENTS” and drag Client-1 into there
 
 </p>
 <br />
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/A7hvWgM.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Log into Client-1 as mydomain.com\jane_admin and open system properties
+Click “Remote Desktop”
+Allow “domain users” access to remote desktop
+You can now log into Client-1 as a normal, non-administrative user now
+Normally you’d want to do this with Group Policy that allows you to change MANY systems at once (maybe a future lab)
+
 </p>
 <br />
+</p>
+<br />
+<img src="https://i.imgur.com/F8KC5cS.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Login to DC-1 as jane_admin
+Open PowerShell_ise as an administrator
+Create a new File and paste the contents of the script into it (https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
+Run the script and observe the accounts being created
+When finished, open ADUC and observe the accounts in the appropriate OU
+attempt to log into Client-1 with one of the accounts (take note of the password in the script)
+
+</p>
+<br />
+
