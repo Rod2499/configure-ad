@@ -25,7 +25,7 @@ This tutorial outlines the implementation of Active Directory within Azure Virtu
 - Ensure connectivity between DC-1 and Client-1
 - Install Active Directory
 - Create Admin and User accounts in AD.
-- Join Client-1 to Doamin
+- Join Client-1 to Domain
 - Setup Remote Desktop for non-administrative users on Client-1
 
 <h2>Deployment and Configuration Steps</h2>
